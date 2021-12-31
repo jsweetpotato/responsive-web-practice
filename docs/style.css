@@ -12,6 +12,8 @@
   --primary-color: #feb960;
   --secondry-color: #9e9e9e;
   --bg-color1: #202020;
+  --bg-color2: #181818;
+  --line-color: #5c5c5c;
 }
 
 ::selection {
@@ -56,9 +58,11 @@ ul {
 }
 
 .wrap {
+  position: relative;
   margin: 0 auto;
   flex-direction: column;
-  width: 80%;
+  width: 60%;
+  /* width: 1143px; */
   height: 100%;
 }
 
@@ -94,8 +98,9 @@ a:hover{
   display: inline-block;
   position: absolute;
   height: 125px;
+  width: 1.5px;
   left: 50%;
-  border: 1px solid var(--primary-color);
+  background: var(--primary-color);
 }
 
 .wrap > section > p {
@@ -427,6 +432,91 @@ header{
 
 .right-side .touch{
   margin-top: 60px;
+}
+
+/* ---------PORTFOLIO--------- */
+.portfolio{
+  width: 100%;
+  height: 100vh;
+  min-height: 700px;
+  background-color: var(--bg-color2);
+}
+
+.portfolio .wrap .line::before{
+  top: 180px;
+  left: 2px;
+}
+
+.actives{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content:  center;
+}
+
+.portfolio .wrap .actives p{
+  margin: 0;
+  display: inline-block;
+  align-self: flex-start;
+  position: absolute;
+  top: 330px;
+  z-index: 2;
+}
+
+.portfolio .wrap .actives h2 {
+  margin: 0;
+  display: inline-block;
+  position: absolute;
+  align-self: flex-start;
+  top: 360px;
+  font-size: 55px;
+  filter: drop-shadow(1px 1px 5px #01010155);
+  z-index: 2;
+}
+
+.active-container{
+  position: relative;
+  overflow: hidden;
+  width: 48vw;
+  transition: 0.2s linear;
+}
+
+.active-imgs{
+  width: 250vw;
+  transform: translateX(-50vw);
+  opacity: 0.5;
+  filter: brightness(0.9);
+  transition: 0.2s linear;
+}
+
+.active-imgs img{
+  width: 50vw;
+  float: left;
+}
+
+.active-container:hover .active-imgs{
+  opacity: 1;
+}
+
+.active-bottom-btns button{
+  margin: 10px;
+  margin-top: 24px;
+  width: 36px;
+  height: 36px;
+  background: transparent;
+  border: unset;
+  cursor: pointer;
+}
+
+.active-bottom-btns button::before{
+  display: inline-block;
+  content: "";
+  width: 24px;
+  height: 2px;
+  background: var(--line-color);
+  border: unset;
 }
 
 /* ---------MODE--------- */
