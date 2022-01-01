@@ -609,6 +609,7 @@ header{
 
 /* portfolio single-page */
 .single-page{
+  position: relative;
   margin-top: 10%;
   width: 100%;
   justify-self: center;
