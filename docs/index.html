@@ -41,8 +41,8 @@
     <div class="wrap flex">
       <div class="line"></div>
       <section class="services">
-      <p>Our services</p>
-      <h2>Our team will take your business<br> presence to new level</h2>
+      <p class="category">Our services</p>
+      <h2 class="title">Our team will take your business<br> presence to new level</h2>
       <div class="service-group flex ">
         <article class="service flex">
           <i class="icon-S service-icon"></i>
@@ -105,17 +105,25 @@
   <!-- PORTFOLIO -->
   <section id="portfolio" class="portfolio">
     <div class="wrap flex">
-      <div class="line"></div>
-      <section class="actives flex">
+
+      <!-- actives -->
+      <section class="actives flex hidden">
+        <div class="line"></div>
         <p class="category">branding & Design</p>
-        <h2 class="project-name">Project One</h2>
-        <div class="active-container">
-          <div class="active-imgs">
-            <img src="https://picsum.photos/id/64/1920/1080?grayscale" alt="" class="img1">
-            <img src="https://picsum.photos/id/21/1920/1080?grayscale" alt="" class="img2">
-            <img src="https://picsum.photos/id/180/1920/1080?grayscale" alt="" class="img3">
-            <img src="https://picsum.photos/id/344/1920/1080?grayscale" alt="" class="img4">
-            <img src="https://picsum.photos/id/200/1920/1080?grayscale" alt="" class="img5">
+        <h2 class="title">Project One</h2>
+        <div class="container flex">
+          <div class="active-container">
+            <div class="active-imgs">
+              <img src="https://picsum.photos/id/64/1920/1080?grayscale" alt="" class="img1">
+              <img src="https://picsum.photos/id/21/1920/1080?grayscale" alt="" class="img2">
+              <img src="https://picsum.photos/id/180/1920/1080?grayscale" alt="" class="img3">
+              <img src="https://picsum.photos/id/344/1920/1080?grayscale" alt="" class="img4">
+              <img src="https://picsum.photos/id/200/1920/1080?grayscale" alt="" class="img5">
+            </div>
+          </div>
+          <div class="active-right-btns flex">
+              <a class="project-detail">Project Detail<span class="right-arrow">→</span></a>
+              <a class="view-slide">view slides<span class="right-arrow">→</span></a>
           </div>
         </div>
         <div class="active-bottom-btns">
@@ -124,7 +132,49 @@
           <button class="img3"></button>
           <button class="img4"></button>
           <button class="img5"></button>
+        </div>      
+      </section>
+
+      <!-- slides -->
+      <section class="slides flex hidden">
+          <div class="slides-container">
+            <div class="slides-imgs">
+              <img src="https://picsum.photos/id/64/1920/1080?grayscale" alt="" class="img1">
+              <img src="https://picsum.photos/id/21/1920/1080?grayscale" alt="" class="img2">
+              <img src="https://picsum.photos/id/180/1920/1080?grayscale" alt="" class="img3">
+              <img src="https://picsum.photos/id/344/1920/1080?grayscale" alt="" class="img4">
+              <img src="https://picsum.photos/id/200/1920/1080?grayscale" alt="" class="img5">
+            </div>
+          </div>
+        <div class="slides-bottom flex">
+          <a class="project-detail"><span class="left-arrow">←</span>back to portfolio</a>
+          <div class="slides-bottom-btns">
+          <button class="img1"></button>
+          <button class="img2"></button>
+          <button class="img3"></button>
+          <button class="img4"></button>
+          <button class="img5"></button>
+        </div>   
         </div>
+      </section>
+
+      <!-- single page -->
+      <section class="single-page flex">
+        <div class="left-side flex">
+          <h2 class="title">Project One</h2>
+          <div class="category-container flex">
+            <p class="category">branding & design</p> 
+            <span>|</span>
+            <p class="category">march 2016</p>
+          </div>
+          <div class="text">
+            <p>Having a baby can be a nerve wracking experience for new parents – not the nine months of pregnancy, I’m talking about after the infant is brought home from the hospital. It’s always the same thing, by the time they have their third child they have it all figured out, but with number one it’s a learning thing.</p>
+            <p>Baby monitors help you hear your baby’s needs without you having to be in the room with the baby. Some baby monitors are portable, or “mobile” and are small enough that you can carry it in your pocket as you do your daily chores around the house. Depending on your price range it’s best to have a base unit that plugs into the wall. The receiving unit can be like your portable phone, you can carry it around with you, and plug it back into the base unit to be recharged.</p>
+          </div>
+        </div>
+        <div class="right-side">
+        </div>
+        <a href=""><span class="left-arrow">←</span>back to portfolio</a>
       </section>
     </div>
   </section>
