@@ -729,7 +729,7 @@ header{
   opacity: 0.6;
 }
 
-.testimonials-cards{
+.cards{
   margin-top: 80px;
   width: 750px;
   flex-direction: column;
@@ -737,27 +737,27 @@ header{
   box-shadow: 0px 6px 11px var(--bg-color2);
 }
 
-.testimonials-cards img{
+.testimonials .cards img{
   width: 80px;
   height: 80px;
   filter: grayscale(100);
   background-color: var(--secondry-color);
 }
 
-.testimonials-cards p{
+.testimonials .cards p{
   margin-top: 48px;
   padding: 0 64px;
   display: inline-block;
   text-align: center;
 }
 
-.testimonials-cards .text{
+.testimonials .cards .text{
   font-family: var(--ff-heading);
   line-height: 30px;
   color: var(--secondry-color);
 }
 
-.testimonials-cards .team{
+.testimonials .cards .team{
   margin: 8px 0 48px 0;
   font-size: 0.9rem;
   font-family: var(--ff-body);
@@ -866,6 +866,147 @@ header{
   line-height: 1.6rem;
   transform: translateY(-4px);
 }
+
+/* CONTACT US */
+.contact-us{
+  background-color: var(--bg-color1);
+  padding-bottom: 120px;
+}
+
+form {
+  width: 750px;
+  padding: 64px;
+  display: grid;
+  grid-template-columns: 45% 45%;
+  justify-content: center;
+  align-items: center;
+  gap: 64px;
+  background-color: var(--bg-color2);
+  box-shadow: 0px 6px 11px var(--bg-color2);
+}
+
+.input-container:nth-child(5),
+.contact-us .touch:nth-child(6){
+  justify-self: center;
+  grid-column: span 2;
+}
+
+.input-container{
+  width: 100%;
+  height: 50px;
+  position: relative;
+  font-family: var(--ff-body);
+  overflow: hidden;
+}
+
+.input-container input{
+  width: 100%;
+  height: 100%;
+  padding-top: 24px;
+  color: white;
+  background-color: transparent;
+  border: none;
+}
+
+.input-container input:focus{
+  outline: none;
+}
+
+.input-container label{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  text-transform: uppercase;
+  pointer-events: none; /* input이랑 사이즈가 같은데 z-index가 더 앞에 있는 요소여서 pointer-events를 none으로 해주면 뒤에 있는 input이 선택된다  */
+  border-bottom: 1px solid var(--line-color);
+}
+
+.input-container label::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 100%;
+  width: 100%;
+  border-bottom: 1px solid var(--primary-color);
+  transform: translateX(-100%);
+  transition: 0.3s ease;
+}
+
+.content-name{
+  position: absolute;
+  bottom: 18px;
+  left: 0;
+  transition: all 0.2s ease;
+}
+
+.input-container input:focus + label .content-name,
+.input-container input:valid + label .content-name{ /* valid = input에 내용이 충족했을 때 */
+  transform: translateY(-60%);
+  font-size: 0.9rem;
+  color: var(--primary-color);
+}
+
+.input-container input:focus + label::after,
+.input-container input:valid + label::after{
+  transform: translateX(0%);  
+}
+
+.contact-us .touch{
+  font-family: var(--ff-body);
+  border: none;
+  cursor: pointer;
+}
+
+.contact-us .touch:hover{
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+/* footer */
+.footer{
+  width: 100%;
+  margin-top: 120px;
+  justify-content: space-evenly;
+}
+
+footer .fusion{
+  align-self: flex-start;
+}
+
+.footer-contact{
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.footer-contact .name {
+  color: white;
+}
+
+.footer-contact .text{
+  padding-top: 24px;
+  font-size: 0.9rem;
+  font-family: var(--ff-body);
+  color: var(--secondry-color);
+  line-height: 1.6rem;
+  transform: translateY(-4px);
+}
+
+
+.icon-container{
+  margin-top: 24px;
+  display: flex;
+  bottom: 0;
+  gap: 8px;
+}
+
+.icon-container img{
+  width: 24px;
+}
+
 /* ---------MODE--------- */
 .hidden{
   display: none;
