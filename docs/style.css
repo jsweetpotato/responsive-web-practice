@@ -1298,8 +1298,73 @@ footer .fusion{
   }
 }
 
+@media (max-width: 600px) {
+
+
+  /* HOMEPAGE */
+  header{
+    font-size: 3rem;
+  }
+
+  .main .wrap{
+    position: relative;
+    overflow: visible;
+  }
+
+  .main nav{
+    position: absolute;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100vw;
+    z-index: 1;
+  }
+
+  .main .GNB{
+    width: 100%;
+    align-items: flex-start;
+    justify-content: flex-end;
+    top: 0;
+    margin:0;
+    background-color: var(--bg-color2);
+  }
+
+  .main .GNB-list{
+    display: inline-block;
+    font-size: 1.2rem;
+  }
+
+  .main .GNB-list::after{
+    position: absolute;
+    margin-top: 2px;
+    height: 18px;
+  }
+
+  .home-nav{
+    width: auto;
+    position: fixed;
+    top: 15px;
+    left: 3%;
+    align-self: flex-start;
+    transform: translate(0);
+    z-index: 1;
+
+  }
+  .home-nav .fusion{
+    width: 28px;
+    height: 28px;
+    font-size: 0.9rem;
+  }
+
+  .home-nav .touch{
+    display: none;
+  }
+}
+
+
 /* ---------MODE--------- */
 .hidden{
   display: none;
 }
+
 
