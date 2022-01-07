@@ -17,6 +17,8 @@
   --line-color2: #202020;
 }
 
+
+
 ::selection {
   background-color: #feba6044;
 }
@@ -1299,8 +1301,13 @@ footer .fusion{
 }
 
 @media (max-width: 600px) {
+  .title{
+    font-size: 1.7rem;
+    margin-top: 24px;
+    margin-bottom: 40px;
+  }
 
-
+ 
   /* HOMEPAGE */
   header{
     font-size: 3rem;
@@ -1315,7 +1322,6 @@ footer .fusion{
     position: absolute;
     position: fixed;
     top: 0;
-    height: 100%;
     width: 100vw;
     z-index: 1;
   }
@@ -1343,7 +1349,7 @@ footer .fusion{
   .home-nav{
     width: auto;
     position: fixed;
-    top: 15px;
+    top: 14px;
     left: 3%;
     align-self: flex-start;
     transform: translate(0);
@@ -1353,12 +1359,46 @@ footer .fusion{
   .home-nav .fusion{
     width: 28px;
     height: 28px;
-    font-size: 0.9rem;
   }
 
   .home-nav .touch{
     display: none;
   }
+
+  /* PORTFOLIO */
+  /* actives */
+  .portfolio .actives .bottom-btns{
+    width: 80%;
+    gap: 0 ;
+    justify-content: space-between;
+  }
+
+  /* single page */
+  .single-page .left-side{
+    min-width: 0;
+    padding: 20px;
+    width: 100%;
+    height: 80vh;
+  }
+
+  .single-page  .left-side h2{
+    font-size: 2.2rem;
+  }
+
+  .single-page .category-container{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .single-page .category-container span{
+    display: none;
+  }
+
+  .single-page .left-side .text{
+    max-height: none;
+  }
+
+
 }
 
 
